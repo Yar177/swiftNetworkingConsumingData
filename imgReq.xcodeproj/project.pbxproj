@@ -12,6 +12,9 @@
 		4A80FE5322BD4F030086B371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A80FE5122BD4F030086B371 /* Main.storyboard */; };
 		4A80FE5522BD4F0B0086B371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A80FE5422BD4F0B0086B371 /* Assets.xcassets */; };
 		4A80FE5822BD4F0B0086B371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A80FE5622BD4F0B0086B371 /* LaunchScreen.storyboard */; };
+		4A80FE6322BD645F0086B371 /* DogAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80FE6222BD645F0086B371 /* DogAPI.swift */; };
+		4A80FE6522BD6B0A0086B371 /* DogImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80FE6422BD6B0A0086B371 /* DogImage.swift */; };
+		4A80FE6722C14B5B0086B371 /* BreedsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80FE6622C14B5B0086B371 /* BreedsListResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		4A80FE5422BD4F0B0086B371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A80FE5722BD4F0B0086B371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A80FE5922BD4F0B0086B371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A80FE6222BD645F0086B371 /* DogAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPI.swift; sourceTree = "<group>"; };
+		4A80FE6422BD6B0A0086B371 /* DogImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImage.swift; sourceTree = "<group>"; };
+		4A80FE6622C14B5B0086B371 /* BreedsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,41 @@
 		4A80FE4C22BD4F030086B371 /* imgReq */ = {
 			isa = PBXGroup;
 			children = (
-				4A80FE4D22BD4F030086B371 /* AppDelegate.swift */,
-				4A80FE4F22BD4F030086B371 /* ViewController.swift */,
-				4A80FE5122BD4F030086B371 /* Main.storyboard */,
-				4A80FE5422BD4F0B0086B371 /* Assets.xcassets */,
-				4A80FE5622BD4F0B0086B371 /* LaunchScreen.storyboard */,
+				4A80FE6122BD4FB00086B371 /* View */,
+				4A80FE6022BD4FA60086B371 /* Controller */,
+				4A80FE5F22BD4F9B0086B371 /* Model */,
 				4A80FE5922BD4F0B0086B371 /* Info.plist */,
 			);
 			path = imgReq;
+			sourceTree = "<group>";
+		};
+		4A80FE5F22BD4F9B0086B371 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A80FE6222BD645F0086B371 /* DogAPI.swift */,
+				4A80FE6422BD6B0A0086B371 /* DogImage.swift */,
+				4A80FE6622C14B5B0086B371 /* BreedsListResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A80FE6022BD4FA60086B371 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A80FE4D22BD4F030086B371 /* AppDelegate.swift */,
+				4A80FE4F22BD4F030086B371 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A80FE6122BD4FB00086B371 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A80FE5122BD4F030086B371 /* Main.storyboard */,
+				4A80FE5422BD4F0B0086B371 /* Assets.xcassets */,
+				4A80FE5622BD4F0B0086B371 /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +170,9 @@
 			files = (
 				4A80FE5022BD4F030086B371 /* ViewController.swift in Sources */,
 				4A80FE4E22BD4F030086B371 /* AppDelegate.swift in Sources */,
+				4A80FE6722C14B5B0086B371 /* BreedsListResponse.swift in Sources */,
+				4A80FE6522BD6B0A0086B371 /* DogImage.swift in Sources */,
+				4A80FE6322BD645F0086B371 /* DogAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2ZL62285Z;
 				INFOPLIST_FILE = imgReq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P2ZL62285Z;
 				INFOPLIST_FILE = imgReq/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
